@@ -2,7 +2,7 @@
 import consumer from "../lib/kafka/consumer.js";
 
 export const kafkaConsumeController = {
-  createMessage: async (req, res) => {
+  getMessages: async (req, res) => {
     try {
       // Connecting the consumer
       await consumer.connect();
